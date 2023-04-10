@@ -1,0 +1,52 @@
+# Project: 项目1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/main.o
+LINKOBJ  = ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/main.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32 -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"../libgraphics" -I"../simpleGUI"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"../libgraphics" -I"../simpleGUI"
+BIN      = ../项目1.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3 -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../compiled/exceptio.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/exceptio.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/exceptio.c -o ../compiled/exceptio.o $(CFLAGS)
+
+../compiled/genlib.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/genlib.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/genlib.c -o ../compiled/genlib.o $(CFLAGS)
+
+../compiled/graphics.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/graphics.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/graphics.c -o ../compiled/graphics.o $(CFLAGS)
+
+../compiled/linkedlist.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/linkedlist.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/linkedlist.c -o ../compiled/linkedlist.o $(CFLAGS)
+
+../compiled/random.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/random.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/random.c -o ../compiled/random.o $(CFLAGS)
+
+../compiled/simpio.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/simpio.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/simpio.c -o ../compiled/simpio.o $(CFLAGS)
+
+../compiled/strlib.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/strlib.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/libgraphics/strlib.c -o ../compiled/strlib.o $(CFLAGS)
+
+../compiled/imgui.o: D:/c小程/学习记录/LibGraphicsSimpleGUI/simpleGUI/imgui.c
+	$(CC) -c D:/c小程/学习记录/LibGraphicsSimpleGUI/simpleGUI/imgui.c -o ../compiled/imgui.o $(CFLAGS)
+
+../compiled/main.o: ../src/main.c
+	$(CC) -c ../src/main.c -o ../compiled/main.o $(CFLAGS)

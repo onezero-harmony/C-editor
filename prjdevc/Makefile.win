@@ -7,8 +7,8 @@ WINDRES  = windres.exe
 OBJ      = ../compiled/main.o ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/edit.o ../compiled/file.o ../compiled/display.o ../compiled/callback.o
 LINKOBJ  = ../compiled/main.o ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/edit.o ../compiled/file.o ../compiled/display.o ../compiled/callback.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32 -g3
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"../libgraphics" -I"../simpleGUI"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"../libgraphics" -I"../simpleGUI"
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"../libgraphics" -I"../simpleGUI" -I"../include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"../libgraphics" -I"../simpleGUI" -I"../include"
 BIN      = ../ÏîÄ¿1.exe
 CXXFLAGS = $(CXXINCS) -m32 -g3
 CFLAGS   = $(INCS) -m32 -g3 -std=c99

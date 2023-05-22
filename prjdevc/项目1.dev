@@ -261,16 +261,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit22]
-FileName=..\src\variable.h
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit23]
 FileName=..\src\file.c
 CompileCpp=0
 Folder=
@@ -280,7 +270,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit24]
+[Unit23]
 FileName=..\src\display.c
 CompileCpp=0
 Folder=
@@ -290,8 +280,18 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit25]
+[Unit24]
 FileName=..\src\callback.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit25]
+FileName=..\include\variable.h
 CompileCpp=0
 Folder=
 Compile=1

@@ -236,7 +236,7 @@ void displayAboutPage()
 
 void displayInstructionsPage()
 {
-	WinExec("cmd.exe /k start https://github.com/onezero-harmony/C-editor", SW_HIDE);
+	WinExec("cmd.exe /k start https://github.com/onezero-harmony/C-editor/blob/master/readme.md", SW_HIDE);
 }
 
 /*

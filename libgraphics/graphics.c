@@ -22,6 +22,7 @@
 #include "gcalloc.h"
 #include "strlib.h"
 #include "extgraph.h"
+#include "file.h"
 
 /*
  * Parameters
@@ -1163,7 +1164,32 @@ static LONG FAR PASCAL GraphicsEventProc(HWND hwnd, UINT msg,
         case WM_DESTROY:
             PostQuitMessage(0);
             return 0;   
-
+		
+		// 以下为更改：
+		case WM_CLOSE:
+			if(!getisSaved()){
+				string filename= getCurrentFileName();
+				char s[10010];
+				if(filename==NULL){
+					sprintf(s, "是否保存对 无标题 的修改？");
+				}
+				else{
+					sprintf(s, "是否保存对 %s 的修改？", filename);
+				}
+				int id= MessageBoxA(graphicsWindow, s, ".c", MB_YESNOCANCEL | MB_ICONEXCLAMATION | MB_APPLMODAL);
+				switch(id){
+					case IDYES:
+						saveFile();
+						break;
+					case IDNO:
+						DestroyWindow(graphicsWindow);
+						break;
+					case IDCANCEL:
+						return 0;
+				}
+			} 
+			DestroyWindow(graphicsWindow);
+			return 0;
         default:
             return DefWindowProc(hwnd, msg, wParam, lParam);
     }                                     

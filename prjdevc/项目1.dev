@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=4
 CompilerSettings=0000000100000000001000000
-UnitCount=20
+UnitCount=25
 
 [VersionInfo]
 Major=1
@@ -51,9 +51,9 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\boolean.h
+FileName=..\src\main.c
 CompileCpp=0
-Folder=Lib
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\exceptio.c
+FileName=..\libgraphics\boolean.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\exception.h
+FileName=..\libgraphics\exceptio.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -81,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\extgraph.h
+FileName=..\libgraphics\exception.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\gcalloc.h
+FileName=..\libgraphics\extgraph.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\genlib.c
+FileName=..\libgraphics\gcalloc.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -111,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\genlib.h
+FileName=..\libgraphics\genlib.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\graphics.c
+FileName=..\libgraphics\genlib.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -131,7 +131,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\graphics.h
+FileName=..\libgraphics\graphics.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -141,7 +141,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\linkedlist.c
+FileName=..\libgraphics\graphics.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -151,7 +151,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\linkedlist.h
+FileName=..\libgraphics\linkedlist.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -161,7 +161,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\random.c
+FileName=..\libgraphics\linkedlist.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -171,7 +171,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit13]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\random.h
+FileName=..\libgraphics\random.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -181,7 +181,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit14]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\simpio.c
+FileName=..\libgraphics\random.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -191,7 +191,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit15]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\simpio.h
+FileName=..\libgraphics\simpio.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -201,7 +201,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\strlib.c
+FileName=..\libgraphics\simpio.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -211,7 +211,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit17]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\libgraphics\strlib.h
+FileName=..\libgraphics\strlib.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -221,7 +221,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit18]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\simpleGUI\imgui.c
+FileName=..\libgraphics\strlib.h
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -231,7 +231,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit19]
-FileName=D:\c小程\学习记录\LibGraphicsSimpleGUI\simpleGUI\imgui.h
+FileName=..\simpleGUI\imgui.c
 CompileCpp=0
 Folder=Lib
 Compile=1
@@ -241,7 +241,57 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit20]
-FileName=..\src\main.c
+FileName=..\simpleGUI\imgui.h
+CompileCpp=0
+Folder=Lib
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit21]
+FileName=..\src\edit.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit22]
+FileName=..\src\variable.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit23]
+FileName=..\src\file.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit24]
+FileName=..\src\display.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit25]
+FileName=..\src\callback.c
 CompileCpp=0
 Folder=
 Compile=1

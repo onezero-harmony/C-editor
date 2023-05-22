@@ -331,13 +331,13 @@ int button(int id, double x, double y, double w, double h, char *label)
 		mySetPenColor( labelColor );
 		drawRectangle(x+sinkx, y+sinky, w, h, 0);
 	}
-
+	/*
 	// 画键盘提示, show a small ractangle frane
 	if( gs_UIState.kbdItem == id ) {
 		mySetPenColor( labelColor );
 		drawRectangle(x+sinkx+shrink, y+sinky+shrink, w-2*shrink, h-2*shrink, 0);
 	}
-
+	*/
 	if( gs_UIState.clickedItem==id && // must be clicked before
 		! gs_UIState.mousedown )   // but now mouse button is up
 	{
@@ -431,9 +431,9 @@ static char shortcutkey(char *s)
  *   >=0   - 用户选中的菜单项 index （在labels[]中）
  *
  */
+int unfoldMenu = 0;
 int menuList(int id, double x, double y, double w, double wlist, double h, char *labels[], int n)
 {
-	static int unfoldMenu = 0;
 	int result = 0;
 	int k = -1;
 
